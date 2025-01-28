@@ -1,0 +1,90 @@
+h1,p,body{
+  margin: 0;
+}
+
+h1{
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+p{
+  font-size: 20px;
+}
+
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color:  rgb(244, 79, 79);
+}
+
+@media screen and (min-width: 768px){
+
+main{
+  margin: 10px;
+}
+
+.flexbox-container{
+  display: flex;
+  justify-content: space-around;
+}
+
+.flexbox-item{
+ border: solid 3px rgb(238, 204, 204);
+ flex-basis: 25%;
+ padding: 10px 15px;
+ margin: 20px 0;
+ padding: auto;
+}
+
+.flexbox-item p:nth-of-type(2)::first-letter{
+  font-weight: bold;
+  color: rgb(97, 206, 249);
+}
+
+.flexbox-item img{
+  margin: 10px 0;
+  width: 70%;
+}
+
+
+h2{
+  font-size: 25px;
+  border-bottom: dotted 3px rgb(236, 122, 122);
+}
+h2::before{
+  content: "⚫︎";
+  color: rgb(239, 111, 139);
+}.
+
+}
+
+@media screen and (max-width: 768px){
+
+  h2{
+    font-size: 30px;
+  }
+  p{
+    font-size: 25px;
+  }
+  .flexbox-container{
+    display: inline-block;
+  }
+}
+
+footer{
+  text-align: center;
+  background-color: rgb(244, 79, 79);
+}
+
+a:link{
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+a:visited{
+  color: rgb(193, 234, 251);
+}
+a:hover{
+  color: rgb(245, 178, 168);
+}
